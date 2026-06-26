@@ -21,5 +21,7 @@
 # echo "First name: $FIRST"
 # echo "Last name: $LAST"
 
-read NAME
-echo $NAME
+# read NAME
+# echo $NAME
+
+read -t 10 -p "Enter your name within 10 seconds: " NAME
