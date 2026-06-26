@@ -1,7 +1,13 @@
 #!/bin/bash
 
+#prints below command first
 echo "Please enter your username::"
 # read is command 
 read USER_NAME
 
 echo "user name is $USER_NAME"
+
+echo "please enter the password::"
+
+# here -s is hide the password
+read -s PASSWORD
