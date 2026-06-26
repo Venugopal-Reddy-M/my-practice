@@ -25,10 +25,15 @@
 # echo $NAME
 #!/bin/bash
 
-read -p "Username: " USERNAME
-read -s -p "Password: " PASSWORD
+# read -p "Username: " USERNAME
+# read -s -p "Password: " PASSWORD
 
-echo
-echo "Welcome $USERNAME"
+# echo
+# echo "Welcome $USERNAME"
 
 #read -t 10 -p "Enter your name within 10 seconds: " NAME
+
+read -n 1 -p "Continue (Y/N): " CHOICE
+
+echo
+echo "You entered: $CHOICE"
