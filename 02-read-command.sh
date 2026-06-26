@@ -35,5 +35,16 @@
 
 read -n 1 -p "Continue (Y/N): " CHOICE
 
+# echo
+# echo "You entered: $CHOICE"
+
+
+read -p "USERNAME:: " USERNAME
+read -s -p "PASSWORD:: " PASSWORD
+
 echo
-echo "You entered: $CHOICE"
+if [ "$USERNAME" = "admin" ] && [ "$PASSWORD" = "dev123" ]; then
+     echo "Login successful"
+else 
+echo "Invalid username and password"
+fi
