@@ -33,7 +33,7 @@
 
 #read -t 10 -p "Enter your name within 10 seconds: " NAME
 
-read -n 1 -p "Continue (Y/N): " CHOICE
+#read -n 1 -p "Continue (Y/N): " CHOICE
 
 # echo
 # echo "You entered: $CHOICE"
