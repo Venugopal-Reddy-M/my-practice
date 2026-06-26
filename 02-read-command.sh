@@ -15,8 +15,11 @@
 # #test perpose to print password
 # echo "password is $PASSWORD"
 
-echo "Enter first and Last name:"
-#passing two inputs
-read FIRST LAST
-echo "First name: $FIRST"
-echo "Last name: $LAST"
+# echo "Enter first and Last name:"
+# #passing two inputs
+# read FIRST LAST
+# echo "First name: $FIRST"
+# echo "Last name: $LAST"
+
+read NAME
+echo $NAME
