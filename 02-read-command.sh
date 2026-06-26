@@ -11,3 +11,6 @@ echo "please enter the password::"
 
 # here -s is hide the password
 read -s PASSWORD
+
+#test perpose to print password
+echo "password is $PASSWORD"
