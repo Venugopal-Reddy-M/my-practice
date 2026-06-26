@@ -23,5 +23,12 @@
 
 # read NAME
 # echo $NAME
+#!/bin/bash
 
-read -t 10 -p "Enter your name within 10 seconds: " NAME
+read -p "Username: " USERNAME
+read -s -p "Password: " PASSWORD
+
+echo
+echo "Welcome $USERNAME"
+
+#read -t 10 -p "Enter your name within 10 seconds: " NAME
