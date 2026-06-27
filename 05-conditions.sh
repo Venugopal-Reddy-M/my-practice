@@ -14,11 +14,11 @@
 # fi
 
 
-Number=$1
+NUMBER=$1
 # -gt ->
 # -lt ->
 # -eq ->
 # -ne ->
- if [ $Number -gt 20 ]; then
-    echo "Given number :$Number is greter then 25"
+ if [ $NUMBER -gt 20 ]; then
+    echo "Given number :$NUMBER is greter then 25"
  fi   
