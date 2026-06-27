@@ -2,12 +2,12 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ]; then
+if [ "$USERID" -ne 0 ]; then
    echo "please run the script root level"
    exit 1
 fi
 VALIDATE(){
-    if [ $1 -ne 0 ]; then
+    if [ "$1" -ne 0 ]; then
        echo "$2 ... FAILURE"
        exit 1
     else 
@@ -15,5 +15,11 @@ VALIDATE(){
     fi 
 }
 
-dnf install nginx
+dnf install nginx -y
 VALIDATE $? "installing nginx"
+
+dnf install mysql -y
+VALIDATE $? "installing mysql"
+
+dnf install nodejs -y
+VALIDATE $? "installing nodejs"
