@@ -7,4 +7,5 @@ read -n 1
 read -a
 => how can you execute a command and take the ouput into shell script?
    Ans:-i put a Command in $() i get the output.
-         ex:TIMESTAMP=$(date)
+         ex:TIMESTAMP=$(date) 
+		    USERID=$(id u)
