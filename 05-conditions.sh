@@ -20,6 +20,9 @@ NUMBER=$1
 # -eq ->
 # -ne ->
 
-if [ $NUMBER -gt 20 ] ; then
+if [ $NUMBER -gt 20 ]; then
+elif
     echo "Given number: $NUMBER is greter then 25"
-fi   
+else   
+    echo "Given number: $NUMBER is less then 25"
+fi
