@@ -28,3 +28,4 @@ SUM=$((number1+$number2))
 
  FRUITS=("APPLE" "BANANA" "POMO")
  echo "fruits are :${FRUITS[@]}"
+ 
