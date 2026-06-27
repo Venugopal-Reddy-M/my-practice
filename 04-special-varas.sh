@@ -11,4 +11,4 @@ echo "Home dire of the current user: $HOME"
 echo "PID of this script: $$"
 sleep 100 &
 echo "PID of recently executed background process: $!"
-echo "ALL args passed to script: $*"
+echo "ALL args passed to script: $*" 
