@@ -14,7 +14,7 @@
 # fi
 
 
-Number=25
+Number=$1
 # -gt ->
 # -lt ->
 # -eq ->
@@ -22,4 +22,3 @@ Number=25
  if [ $Number -gt 20 ]; then
     echo "Given number :$Number is greter then 25"
  fi   
- 
