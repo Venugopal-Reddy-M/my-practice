@@ -12,3 +12,14 @@ echo "PID of this script: $$"
 sleep 100 &
 echo "PID of recently executed background process: $!"
 echo "ALL args passed to script: $*" 
+
+
+##Data_type##
+## in scripting two data types only
+## 1.number
+## 2.string
+
+number1=100
+number2=200
+SUM=$((number1+$number2))
+ echo "sum is: $SUM"

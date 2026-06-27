@@ -39,12 +39,12 @@
 # echo "You entered: $CHOICE"
 
 
-read -p "USERNAME:: " USERNAME
-read -s -p "PASSWORD:: " PASSWORD
+# read -p "USERNAME:: " USERNAME
+# read -s -p "PASSWORD:: " PASSWORD
 
-echo
-if [ "$USERNAME" = "admin" ] && [ "$PASSWORD" = "dev123" ]; then
-     echo "Login successful"
-else 
-echo "Invalid username and password"
-fi
+# echo
+# if [ "$USERNAME" = "admin" ] && [ "$PASSWORD" = "dev123" ]; then
+#      echo "Login successful"
+# else 
+# echo "Invalid username and password"
+# fi
