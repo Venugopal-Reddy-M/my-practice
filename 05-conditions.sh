@@ -23,6 +23,8 @@ NUMBER=$1
 if [ $NUMBER -gt 20 ]; then
 
     echo "Given number: $NUMBER is greter then 25"
+elif [ $NUMBER -eq 20 ]; then
+     echo "Given number is : $NUMBER eqal to 20"
 else   
     echo "Given number: $NUMBER is less then 25"
 fi
