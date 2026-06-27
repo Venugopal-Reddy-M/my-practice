@@ -20,6 +20,6 @@ echo "ALL args passed to script: $*"
 ## 2.string
 
 number1=100
-number2=200
+number2=venu
 SUM=$((number1+$number2))
  echo "sum is: $SUM"
