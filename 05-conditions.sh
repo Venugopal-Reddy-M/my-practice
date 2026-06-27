@@ -19,6 +19,6 @@ NUMBER=$1
 # -lt ->
 # -eq ->
 # -ne ->
- if [ $NUMBER -gt 20 ]; then
-    echo "Given number :$NUMBER is greter then 25"
- fi   
+if [ $NUMBER -gt 20 ]; then
+    echo "Given number: $NUMBER is greter then 25"
+fi   
