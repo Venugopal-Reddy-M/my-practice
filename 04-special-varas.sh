@@ -23,3 +23,8 @@ number1=100
 number2=venu
 SUM=$((number1+$number2))
  echo "sum is: $SUM"
+
+ ##Arrays
+
+ FRUITS=("APPLE" "BANANA" "POMO")
+ echo "fruits are :${FRUITS[@]}"
