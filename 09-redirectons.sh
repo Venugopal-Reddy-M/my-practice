@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
-LOGS_FOLDER="/var/log/shell-script_logs_practice "
+LOGS_FOLDER="/var/log/shell-script_logs_practice"
 LOGS_FILE="/var/log/shell-script_logs_practice/$0.log"
 
 
@@ -10,7 +10,7 @@ if [ $USERID -ne 0 ]; then
    exit 1
 fi
 
-mkdir -p $LOGS_FOLDER
+mkdir -p "$LOGS_FOLDER"
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
@@ -21,5 +21,5 @@ VALIDATE(){
     fi  
 }
 
-dnf insall nginx -y &>> $LOGS_FILE
+dnf install nginx -y &>> "$LOGS_FILE"
 VALIDATE $? "insatll nginx"
