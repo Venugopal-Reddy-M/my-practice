@@ -14,9 +14,11 @@ VALIDATE(){
        echo "$2 .... SUCCESS"
     fi 
 }
+## $? = 0 or 1 that is represent $1
+## installing nginx/mysql/nodejs/ is $2
 
 dnf install nginx -y
-VALIDATE $? "installing nginx"
+VALIDATE $? "installing nginx" 
 
 dnf install mysql -y
 VALIDATE $? "installing mysql"

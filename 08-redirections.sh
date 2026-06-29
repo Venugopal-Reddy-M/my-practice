@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ USERID -ne 0 ]; then
+   echo "run the script root level"
+   exit 1
+fi
+
+VALIDATE(){
+    if [ $1 -ne 0 ]; then
+        echo "$2 ... FAILURE"
+        exit 1
+    else 
+       echo "$2 ... SUCCESS"
+    fi   
+}
+
+dnf install nginx -y
+VALIDATE $? "installing Nginx"
