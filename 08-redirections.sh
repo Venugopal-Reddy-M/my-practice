@@ -1,8 +1,8 @@
 #!/bin/bash
 
 USERID=$(id -u)
-LOGS_FOLDER="/var/log/shell-script_logs_prac"
-LOGS_FILE="/var/log/shell-script_logs_prac/$0.log"
+LOGS_FOLDER="/var/log/shell-script_logs_practice "
+LOGS_FILE="/var/log/shell-script_logs_practice/$0.log"
 
 if [ $USERID -ne 0 ]; then
    echo "run the script root level"
