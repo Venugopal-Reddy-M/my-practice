@@ -1,5 +1,10 @@
 #!/bin/bash
 
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script_logs_practice"
 LOGS_FILE="/var/log/shell-script_logs_practice/$0.log" 
@@ -12,7 +17,7 @@ mkdir -p $LOGS_FOLDER
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
-      echo "$2.... FAILURE" | tee -a $LOGS_FILE
+      echo -e "$R$2.... FAILURE$N" | tee -a $LOGS_FILE
       exit 1
     else
       echo "$2.... SUCCUSE" | tee -a $LOGS_FILE
