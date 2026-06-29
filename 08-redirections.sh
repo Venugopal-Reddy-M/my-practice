@@ -1,6 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
+LOGS_FOLDER="/var/log/shell-script_logs_prac"
+LOGS_FILE="/var/log/shell-script_logs_prac/$0.log"
+
 if [ $USERID -ne 0 ]; then
    echo "run the script root level"
    exit 1
@@ -15,5 +18,5 @@ VALIDATE(){
     fi   
 }
 
-dnf install nginx -y
+dnf install nginx -y &>>$LOGS_FILE
 VALIDATE $? "installing Nginx"
