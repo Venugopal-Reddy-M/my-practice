@@ -18,5 +18,5 @@ VALIDATE(){
     fi   
 }
 
-dnf install nginx -y &>>$LOGS_FILE
+dnf install nginx -y &>> $LOGS_FILE
 VALIDATE $? "installing Nginx"
