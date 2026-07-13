@@ -23,8 +23,8 @@ FILES_TO_DELETE=$(find $LOGS_DIR -name "*.log" -type f -mtime -14)
 ## IFS=internal field separater  
 ################################
 
- while IFS= read -r filepath; do
- echo"Deleteing file:$filepath"
- rm -f $filepath
- echo "Delete file: $filepath"
- done  <<< $FILES_TO_DELETE
+#  while IFS= read -r filepath; do
+#  echo"Deleteing file:$filepath"
+#  rm -f $filepath
+#  echo "Delete file: $filepath"
+#  done  <<< $FILES_TO_DELETE
