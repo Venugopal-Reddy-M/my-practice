@@ -14,6 +14,7 @@ N="\e[0m"
 if [ ! -d $LOGS_DIR ]; then
    echo -e "$LOGS_DIR Does not exit"
    exit 1
+   else "files are exist: $LOGS_DIR "
 fi
 
 FILES_TO_DELETE=$(find $LOGS_DIR -name "*.log" -type f -mtime -14)
